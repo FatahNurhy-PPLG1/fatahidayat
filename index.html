@@ -94,7 +94,7 @@
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-3 cardone">
             <div class="card" data-aos="flip-left" data-aos-duration="500">
               <img src="img/life/ph1.jpg" class="card-img-top" alt="life 1" />
               <div class="card-body">
@@ -103,7 +103,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-3 cardone">
             <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
               <img src="img/life/ph2.jpg" class="card-img-top" alt="life 1" />
               <div class="card-body">
@@ -112,7 +112,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-3 cardone">
             <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="200">
               <img src="img/life/ph3.jpg" class="card-img-top" alt="life 1" />
               <div class="card-body">
@@ -121,7 +121,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-3 cardone">
             <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="300">
               <img src="img/life/ph4.jpg" class="card-img-top" alt="life 1" />
               <div class="card-body">
@@ -130,7 +130,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-3 cardone">
             <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="400">
               <img src="img/life/ph5.jpg" class="card-img-top" alt="life 1" />
               <div class="card-body">
@@ -239,6 +239,18 @@
             console.log("Success!", response);
           })
           .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <!--Vanilla tilt.js Library Refer- https://micku7zu.github.io/vanilla-tilt.js/ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".cardone"), {
+        max: 4,
+        speed: 600,
+        scale: 1.05,
+        glare: true,
+        "max-glare": 1,
       });
     </script>
   </body>
